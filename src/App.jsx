@@ -4,6 +4,7 @@
 import "./App.css";
 import BlobPage from "./components/BlobPage";
 import ContentComponent from "./components/ContentComponent";
+import PostComponent from "./components/PostComponent";
 import { ThemeProvider } from "./context/ThemeProvider";
 
 // function App() {
@@ -52,9 +53,10 @@ export default function App() {
             {/* <UserInfoContext.Provider value={userInfo}>
                 <BlobPage />
             </UserInfoContext.Provider> */}
-            <ThemeProvider>
+            {/* <ThemeProvider>
                 <ContentComponent></ContentComponent>
-            </ThemeProvider>
+            </ThemeProvider> */}
+            <PostComponent></PostComponent>
         </>
     );
 }
