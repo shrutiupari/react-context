@@ -8,4 +8,16 @@ const getPosts = () => {
     return api.get(`/posts`);
 };
 
-export { getPosts };
+const deletePost = (id) => {
+    return api.delete(`/posts/${id}`);
+};
+
+const createPost = (post) => {
+    return api.post(`/posts`, post);
+};
+
+const updatePost = (id, post) => {
+    return api.put(`/posts/${id}`, post);
+};
+
+export { getPosts, deletePost, createPost, updatePost };
